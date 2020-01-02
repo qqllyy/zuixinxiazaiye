@@ -1,0 +1,212 @@
+<html style="font-size: 48px;"><head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=11," id="mixia_vpid">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>新钰新视频下载页--微信公众号：钰新科技</title>
+	<link rel="stylesheet" href="css/reset.css" type="text/css">
+	<style>		
+		body {
+			font-family: -apple-system-font,BlinkMacSystemFont,"Helvetica Neue","PingFang SC","Hiragino Sans GB","Microsoft YaHei UI","Microsoft YaHei",Arial,sans-serif;
+		}
+		
+		span.red {
+			color: rgb(250, 38, 39);
+		}
+		
+		.button {
+		    background-color: #4CAF50; /* Green */
+		    border: none;
+		    color: white;
+		    padding: 15px 32px;
+		    text-align: center;
+		    text-decoration: none;
+		    display: inline-block;
+		    font-size: 16px;
+		    border-radius: 4px;
+		    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+		    -webkit-transition-duration: 0.4s; /* Safari */
+		    transition-duration: 0.4s;
+		}
+		
+		.ending_box{
+		    position: absolute;
+		    top:0;
+		    left: 0;
+		    width: 100%;
+		    height: 100%;
+		}
+		
+		.ending_con{
+		    position: absolute;
+		    top: 30%;
+		    left: 50%;
+		    width: 5rem;
+		    height: 6rem;
+		    margin-left: -2.5rem;
+		    margin-top: -3rem;
+		}
+		.ending_con .ending_img{
+		    margin: 0.5rem auto;
+		}
+		.ending_con .ending_img img{
+		    width: 100%;
+		}
+		.ending_con .ending_txt{
+		    text-align: left;
+		    line-height: 0.6rem;
+		    font-size: 0.28rem;
+		    color:#333;
+		    margin-top: 0.5rem;
+		    letter-spacing: 2px;
+		}
+		    
+	</style>
+	<script>
+		
+		        (function(win, designW) {
+		var doc = win.document;
+		var docEle = doc.documentElement;
+		designW = designW || 640; //设计稿宽度px,默认640px设计稿
+		var ratio = designW / 100;//640px=> 1rem = 100px, 超出640px font-size：100px;
+		var or = "orientationchange" in win ? "orientationchange" : "resize";
+		//创建viewport
+		_createViewport();
+		if(doc.addEventListener){
+		    win.addEventListener(or, _refreshRem, false);
+		    doc.addEventListener("DOMContentLoaded", _refreshRem, false);
+		}
+		/**
+		 * 创建viewport
+		 */
+		function _createViewport(){
+		    var metaEl = doc.createElement('meta');
+		    metaEl.setAttribute('name', 'viewport');
+		    metaEl.setAttribute('content', 'initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no');
+		    if (docEle.firstElementChild) {
+		        docEle.firstElementChild.appendChild(metaEl);
+		    }
+		
+		}
+		/**
+		 * 动态更新rem
+		 */
+		function _refreshRem() {
+		    var clientW = docEle.clientWidth || 320;
+		    //设置最大和最小宽度取值
+		    if(clientW > designW){
+		        clientW = designW
+		    } else if(clientW<320){
+		        clientW=320;
+		    }
+		    docEle.style.fontSize = clientW / ratio + "px";
+		};
+		        })(window, 750);//750为设计稿宽度px值,根据实际设计稿大小对应设置
+		    
+	</script><meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+</head>
+<body>
+<div class="ending_box" q-ctrl="endingCtrl">
+	<div class="ending_con">
+		<p class="ending_txt" style="font-size:0.5rem;line-height: 0.6rem">
+			新钰新视频，一款支持全网VIP付费视频免费观看的影视APP
+		</p>
+
+  
+		<p class="ending_txt">
+			给大家推荐一款影视软件，可以观看全网VIP付费视频，内置播放器，可输入m3u8链接播放，支持X5浏览播放，悬浮窗播放，外置播放，可以自选播放播，可以调试内核，软件内的功能还是比较多的，安全绿色无广告，欢迎下载体验。
+		</p>
+		<p class="ending_img" style="text-align:center">
+			<img style="width:50%" src="https://i.loli.net/2019/10/26/MTrRUha9fG4w2zO.png"> 
+		</p>
+		<p class="ending_txt" style="text-align:center;font-size:0.3rem;line-height: 0.3rem">
+			<a class="download button" href="javascript:;">点我下载</a>
+		</p>
+		<p class="ending_txt" style="text-align:center;font-size:0.2rem;line-height: 0.3rem">
+			官网地址：<a href="https://qqllyy.github.io/xinguanwang/">https://qqllyy.github.io/xinguanwang/</a>
+		</p>
+		<p class="ending_txt">
+			1、第1次启动新钰新视频该做什么？<span class="red">“答:首次启动有一个安装内核提示弹窗，
+根据提示，安装线上内核即可。”</span>若错过提示弹窗，则在侧滑栏，
+找到安装内核，安装完成后重启软件即可！<span class="red">观看</span>
+		</p>
+		<p class="ending_img">
+			<img src="https://i.loli.net/2020/01/02/3wGzfNcXxByATdC.jpg"> 
+		</p>
+		<p class="ending_txt">
+			2、如何使用屏幕按钮播放VIP视频？
+<span class="red">答：打开"小房屋"图标，选择一个影视平台，选择您想要播放的视频以及集数，点击屏幕播放按钮，即可进入播放。
+</span>若播放失败，请先退出播放后，
+长按屏幕，会弹出新的接口，选择一个即可进入，若失败请再切换接口。在APP里点击联系客服更换接口即可。一般作者提供的接口是非常稳定且高清。
+		</p>
+		<p class="ending_img">
+			<img src="https://i.loli.net/2020/01/02/QmBurSnIYgyhVv7.jpg"> 
+		</p>
+		<p class="ending_txt">
+			3.如何进行视频悬浮窗播放？<span class="red">答：首先下载QQ浏览器，然后把QQ浏览器和新钰新视频的悬浮窗权限都允许，然后在QQ浏览器里随便看个视频并悬浮播放一次，这个过程叫悬浮播放的预热。（第二次使用只需要在播放悬浮之前把QQ浏览器打开即可）
+然后就可以在新钰新视频里播放一个视频，然后点击播放界面右上角的小窗口，先退出播放界面，再点击关闭软件，这时候，可实现边聊天边看视频等。</span>
+		</p>
+		
+		<p class="ending_img">
+			<img src="https://i.loli.net/2020/01/02/qDou4dSbBFg9XVC.jpg"> 
+		</p>
+  </p>
+		<p class="ending_txt">
+			4.如何获取m3u8视频链接，并使用新钰新视频内置播放器呢？<span class="red">答：首先下载米侠浏览器，然后在新钰新视频，顶栏找到米侠logo图标，选择你想看的视频，点击前往嗅探，把嗅探的视频复制链接，返回输入链接。即可载入内置播放器。如果视频播放失败，说明该链接不是m3u8、mp4或者链接失效。</span>
+		</p>
+		
+		<p class="ending_img">
+			<img src="https://i.loli.net/2020/01/02/zobNjuP8CTMD2IK.jpg"> 
+		</p>
+  
+  
+		<p class="ending_txt" style="text-align:center;font-size:0.3rem;line-height: 0.3rem">
+			<a class="download button" href="javascript:;">点我下载</a>
+		</p>
+		<p class="ending_txt">软件开发者：钰郎哥，微信公众号：钰新科技（感谢关注与支持）</p>
+	</div>
+</div>
+
+<script>
+	
+	function is_weixin() {
+		var ua = navigator.userAgent.toLowerCase();
+		if (ua.match(/MicroMessenger/i) == "micromessenger") {
+			return true;
+		} else {
+			return false;
+		}
+	}
+	
+	function loadHtml(){
+		var div = document.createElement('div');
+		div.id = 'weixin-tip';
+		div.innerHTML = '<p><img class="wx_tip" src="https://cloud-inject-global.oss-cn-hongkong.aliyuncs.com/res/imgs/live_weixin.png" alt="微信打开"/></p>';
+		document.body.appendChild(div);
+	}
+	
+	function loadStyleText() {
+		var cssText = "#weixin-tip{position: fixed; left:0; top:0; background: rgba(0,0,0,0.8); filter:alpha(opacity=80); width: 100%; height:100%; z-index: 100;} #weixin-tip p{text-align: center; margin-top: 10%; padding:0 5%;}";
+		var style = document.createElement('style');
+		style.rel = 'stylesheet';
+		style.type = 'text/css';
+		try {
+			style.appendChild(document.createTextNode(cssText));
+		} catch (e) {
+			style.styleSheet.cssText = cssText; //ie9以下
+		}
+		var head=document.getElementsByTagName("head")[0]; //head标签之间加上style样式
+		head.appendChild(style); 
+	}
+	
+	document.getElementsByClassName("download")[0].addEventListener("click", function(){
+		if (is_weixin()) {
+			loadHtml();
+			loadStyleText();
+		} else {
+			window.location.href = "新钰新视频.apk";
+		}
+	});
+</script>
+
+</body></html>
