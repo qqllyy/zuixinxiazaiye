@@ -1,209 +1,201 @@
-<html style="font-size: 48px;"><head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=11," id="mixia_vpid">
-	<meta name="apple-mobile-web-app-capable" content="yes">
-	<meta name="apple-mobile-web-app-status-bar-style" content="black">
-	<title>新钰新视频(new)下载页</title>
-	<link rel="stylesheet" href="css/reset.css" type="text/css">
-	<style>		
-		body {
-			font-family: -apple-system-font,BlinkMacSystemFont,"Helvetica Neue","PingFang SC","Hiragino Sans GB","Microsoft YaHei UI","Microsoft YaHei",Arial,sans-serif;
-		}
-		
-		span.red {
-			color: rgb(250, 38, 39);
-		}
-		
-		.button {
-		    background-color: #4CAF50; /* Green */
-		    border: none;
-		    color: white;
-		    padding: 15px 32px;
-		    text-align: center;
-		    text-decoration: none;
-		    display: inline-block;
-		    font-size: 16px;
-		    border-radius: 4px;
-		    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-		    -webkit-transition-duration: 0.4s; /* Safari */
-		    transition-duration: 0.4s;
-		}
-		
-		.ending_box{
-		    position: absolute;
-		    top:0;
-		    left: 0;
-		    width: 100%;
-		    height: 100%;
-		}
-		
-		.ending_con{
-		    position: absolute;
-		    top: 30%;
-		    left: 50%;
-		    width: 5rem;
-		    height: 6rem;
-		    margin-left: -2.5rem;
-		    margin-top: -3rem;
-		}
-		.ending_con .ending_img{
-		    margin: 0.5rem auto;
-		}
-		.ending_con .ending_img img{
-		    width: 100%;
-		}
-		.ending_con .ending_txt{
-		    text-align: left;
-		    line-height: 0.6rem;
-		    font-size: 0.28rem;
-		    color:#333;
-		    margin-top: 0.5rem;
-		    letter-spacing: 2px;
-		}
-		    
-	</style>
-	<script>
-		
-		        (function(win, designW) {
-		var doc = win.document;
-		var docEle = doc.documentElement;
-		designW = designW || 640; //设计稿宽度px,默认640px设计稿
-		var ratio = designW / 100;//640px=> 1rem = 100px, 超出640px font-size：100px;
-		var or = "orientationchange" in win ? "orientationchange" : "resize";
-		//创建viewport
-		_createViewport();
-		if(doc.addEventListener){
-		    win.addEventListener(or, _refreshRem, false);
-		    doc.addEventListener("DOMContentLoaded", _refreshRem, false);
-		}
-		/**
-		 * 创建viewport
-		 */
-		function _createViewport(){
-		    var metaEl = doc.createElement('meta');
-		    metaEl.setAttribute('name', 'viewport');
-		    metaEl.setAttribute('content', 'initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no');
-		    if (docEle.firstElementChild) {
-		        docEle.firstElementChild.appendChild(metaEl);
-		    }
-		
-		}
-		/**
-		 * 动态更新rem
-		 */
-		function _refreshRem() {
-		    var clientW = docEle.clientWidth || 320;
-		    //设置最大和最小宽度取值
-		    if(clientW > designW){
-		        clientW = designW
-		    } else if(clientW<320){
-		        clientW=320;
-		    }
-		    docEle.style.fontSize = clientW / ratio + "px";
-		};
-		        })(window, 750);//750为设计稿宽度px值,根据实际设计稿大小对应设置
-		    
-	</script><meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
-</head>
-<body>
-<div class="ending_box" q-ctrl="endingCtrl">
-	<div class="ending_con">
-		<p class="ending_txt" style="font-size:0.5rem;line-height: 0.6rem">
-			新钰新视频，一款支持全网VIP付费视频免费观看的影视APP
-		</p>
+<html><head>
+<meta itemprop="image" content="http://appimage.gzjkw.net/1585039021.png">
+<title>新钰新视频下载官网</title>
+<meta itemprop="name" content="新钰新视频下载官网">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; minimum-scale=1.0; maximum-scale=11.0" id="mixia_vpid">
+<meta name="keywords" content="钰郎哥">
+<meta name="description" content="微信公众号：钰新科技">
+<style type="text/css">
+a {
+  text-decoration: none
+}
 
-  
-		<p class="ending_txt">
-			给大家推荐一款影视软件，可以观看全网VIP付费视频，内置播放器，可输入m3u8链接播放，支持X5浏览播放，悬浮窗播放，外置播放，可以自选播放播，可以调试内核，软件内的功能还是比较多的，安全绿色无广告，欢迎下载体验。
-		</p>
-		<p class="ending_img" style="text-align:center">
-			<img style="width:50%" src="https://i.loli.net/2019/10/26/MTrRUha9fG4w2zO.png"> 
-		</p>
-		<p class="ending_txt" style="text-align:center;font-size:0.3rem;line-height: 0.3rem">
-			<a class="download button" href="javascript:;">点我下载</a>
-		</p>
-		<p class="ending_txt" style="text-align:center;font-size:0.2rem;line-height: 0.3rem">
-			官网地址：<a href="https://qqllyy.github.io/xinguanwang/">https://qqllyy.github.io/xinguanwang/</a>
-		</p>
-		<p class="ending_txt">
-			1、第1次启动新钰新视频该做什么？<span class="red">“答:首次启动有一个安装内核提示弹窗，
-根据提示，安装线上内核即可。”</span>若错过提示弹窗，则在侧滑栏，
-找到安装内核，安装完成后重启软件即可！<span class="red">观看</span>
-		</p>
-		<p class="ending_img">
-			<img src="https://i.loli.net/2020/01/02/3wGzfNcXxByATdC.jpg"> 
-		</p>
-		<p class="ending_txt">
-			2、如何使用屏幕按钮播放VIP视频？
-<span class="red">答：打开"小房屋"图标，选择一个影视平台，选择您想要播放的视频以及集数，点击屏幕播放按钮，即可进入播放。
-</span>若播放失败，请先退出播放后，
-长按屏幕，会弹出新的接口，选择一个即可进入，若失败请再切换接口。在APP里点击联系客服更换接口即可。一般作者提供的接口是非常稳定且高清。
-		</p>
-		<p class="ending_img">
-			<img src="https://i.loli.net/2020/01/02/QmBurSnIYgyhVv7.jpg"> 
-		</p>
-		<p class="ending_txt">
-			3.如何进行视频悬浮窗播放？<span class="red">答：首先下载QQ浏览器，然后把QQ浏览器和新钰新视频的悬浮窗权限都允许，然后在QQ浏览器里随便看个视频并悬浮播放一次，这个过程叫悬浮播放的预热。（第二次使用只需要在播放悬浮之前把QQ浏览器打开即可）
-然后就可以在新钰新视频里播放一个视频，然后点击播放界面右上角的小窗口，先退出播放界面，再点击关闭软件，这时候，可实现边聊天边看视频等。</span>
-		</p>
-		
-		<p class="ending_img">
-			<img src="https://i.loli.net/2020/01/02/qDou4dSbBFg9XVC.jpg"> 
-		</p>
-  </p>
-		<p class="ending_txt">
-			4.如何获取m3u8视频链接，并使用新钰新视频内置播放器呢？<span class="red">答：首先下载米侠浏览器，然后在新钰新视频，顶栏找到米侠logo图标，选择你想看的视频，点击前往嗅探，把嗅探的视频复制链接，返回输入链接。即可载入内置播放器。如果视频播放失败，说明该链接不是m3u8、mp4或者链接失效。</span>
-		</p>
-		
-		<p class="ending_img">
-			<img src="https://i.loli.net/2020/01/02/zobNjuP8CTMD2IK.jpg"> 
-		</p>
-  
-  
-		<p class="ending_txt">软件开发者：钰郎哥，微信公众号：钰新科技（感谢关注与支持）</p>
-	</div>
+body {
+  margin: 0 auto;
+  max-width: 880px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+  min-width: 320px;
+  padding-bottom: 0.1px
+}
+
+html {
+  background: #eee
+}
+
+* {
+  letter-spacing: 1px;
+  font-family: 'Helvetica', 'Droidsansfallback', 'Heiti SC';
+  box-sizing: border-box;
+  outline: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  color: #333;
+}
+
+.icon {
+  width: 60px;
+  height: 60px;
+  margin-top: 15px;
+}
+
+.title {
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+p {
+  font-size: 12pt;
+  color: #4CAF50;
+  margin-top: 5px;
+}
+
+.content {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #757575;
+  margin-bottom: 15px;
+}
+
+.picture {
+  overflow-x: scroll;
+  width: 100%;
+  white-space: nowrap;
+  margin-bottom: 25px;
+}
+
+.child {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.p {
+  font-size: 12px;
+  color: #939393;
+  margin-top: 4px;
+}
+
+.show {
+  background: #fff;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
+  font-size: 14px;
+  color: #616161;
+  word-wrap: break-word;
+  padding-top: 10px;
+}
+
+.down {
+  border-top-left-radius: 0.5em;
+  border-top-right-radius: 0.5em;
+  border-bottom-left-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
+  border-top-width: 0px;
+  border-right-width: 0px;
+  border-bottom-width: 0px;
+  border-left-width: 0px;
+  margin-top: 10px;
+  color: #ffffff;
+  background: #4CAF50;
+  width: 100px;
+  height: 30px;
+  margin-bottom: 20px;
+}
+
+.review {
+  margin: 15px;
+  font-size: 14px;
+  color: #424242
+}
+
+.user {
+  margin-left: 15px;
+  margin-top: 10px;
+}
+
+.title2 {
+  color: #455A64;
+  margin-top: 5px;
+  margin-left: 30px;
+  font-size: 14px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="show" align="center">
+<img referrerpolicy="no-referrer" class="icon" src="http://appimage.gzjkw.net/1585039107.png">
+<div class="title"><b>新钰新视频</b></div>
+<div class="p">
+版本：2.3 下载量：20万次 </div>
+<!--微信关注公众号：钰新科技-->
+<button class="down" onclick="window.location.href ='https://www.lanzous.com/b0pgkkub'">极速下载</button>
 </div>
 
-<script>
-	
-	function is_weixin() {
-		var ua = navigator.userAgent.toLowerCase();
-		if (ua.match(/MicroMessenger/i) == "micromessenger") {
-			return true;
-		} else {
-			return false;
-		}
-	}
-	
-	function loadHtml(){
-		var div = document.createElement('div');
-		div.id = 'weixin-tip';
-		div.innerHTML = '<p><img class="wx_tip" src="https://cloud-inject-global.oss-cn-hongkong.aliyuncs.com/res/imgs/live_weixin.png" alt="微信打开"/></p>';
-		document.body.appendChild(div);
-	}
-	
-	function loadStyleText() {
-		var cssText = "#weixin-tip{position: fixed; left:0; top:0; background: rgba(0,0,0,0.8); filter:alpha(opacity=80); width: 100%; height:100%; z-index: 100;} #weixin-tip p{text-align: center; margin-top: 10%; padding:0 5%;}";
-		var style = document.createElement('style');
-		style.rel = 'stylesheet';
-		style.type = 'text/css';
-		try {
-			style.appendChild(document.createTextNode(cssText));
-		} catch (e) {
-			style.styleSheet.cssText = cssText; //ie9以下
-		}
-		var head=document.getElementsByTagName("head")[0]; //head标签之间加上style样式
-		head.appendChild(style); 
-	}
-	
-	document.getElementsByClassName("download")[0].addEventListener("click", function(){
-		if (is_weixin()) {
-			loadHtml();
-			loadStyleText();
-		} else {
-			window.location.href = "新钰新视频.apk";
-		}
-	});
-</script>
 
-</body></html>
+<div class="show" style="margin-top: 15px;padding-left: 15px;padding-right: 5px;">
+
+<p>应用详情</p>
+<div class="content"> 新钰新视频是一款视频播放器应用，可以说是一款风格非常独特的视频播放器应用。自动播放视频<br>
+<!--微信关注公众号：钰新科技-->
+<br>
+微信关注公众号：钰新科技
+<br>
+<p>应用功能</p>
+①全新UI界面设计，提供十多个影视平台,你可以轻松找到或者是自己搜索各类的电影影视以及动漫综艺等,影视资源相当丰富，还支持爱奇艺、腾讯等视频解析，而且支持自动全屏播放。
+<br>
+②X5播放流畅和悬浮播放播放，自动跟随视频播放方向。
+<br>
+③支持手动输入其它网页进行浏览,内置X5内核播放页,且支持调试内核。
+<br>
+④支持抖音去水印下载。
+<br>
+⑤支持自选播放器和外置浏览器播放。
+<br>
+⑥网页去广告优化程度极高。
+<br>
+⑦支持视频音频下载。
+<br>
+<br>
+<p>应用特色</p>
+①视频的资源超级丰富，最新影视电影以及经典老片都可以搜索。
+<br>
+②更新速度快，让你不会因为收费问题错过，同步更新且免费用。
+<br>
+③分类详细，而且播放的时候缓冲速度快，不用漫长等待，支持多线路。
+<br>
+<br>
+<p>应用界面</p>
+<div class="picture">
+<a href="./">
+<img referrerpolicy="no-referrer" src="http://appimage.gzjkw.net/1585039660.png" width="80%" height="80%">
+</a>
+<a href="./">
+<img referrerpolicy="no-referrer" src="http://appimage.gzjkw.net/1585039704.png" width="80%" height="80%">
+</a>
+<a href="./">
+<img referrerpolicy="no-referrer" src="http://appimage.gzjkw.net/1585039919.png" width="80%" height="80%">
+</a>
+<a href="./">
+<img referrerpolicy="no-referrer" src="http://appimage.gzjkw.net/1585040239.png" width="80%" height="80%">
+</a>
+<a href="./">
+<img referrerpolicy="no-referrer" src="http://appimage.gzjkw.net/1585040265.png" width="80%" height="80%">
+</a>
+<a href="./">
+<img referrerpolicy="no-referrer" src="http://appimage.gzjkw.net/1585039779.png" width="80%" height="80%">
+</a>
+<div style="width=100%;padding: 5px;" align="center">
+
+<div style="text-align:center;font-size:12px;color:#adadad;margin:10px;margin-bottom: 35px;">Copyight © 2016-2020-钰郎哥--版权归钰郎哥所有
+
+</div>
+</div>
+
+
+
+</div></body></html>
